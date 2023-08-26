@@ -1,0 +1,101 @@
+units:
+  #Spacing variables
+  kx: cx
+  ky: cy
+  #Padding variables
+  px: kx + 2
+  py: ky + 2
+points:
+  zones:
+    matrix:
+      key:
+        padding: 1py
+        //spread: 1px
+      columns:
+        index_reach:
+          rows.mod.skip: true
+        index:
+          key:
+            stagger: 3
+          rows.mod.skip: true
+        ring:
+          key:
+            stagger: 4
+            splay: -2
+          rows.mod.skip: true
+        middle:
+          key:
+            stagger: -12
+            splay: -4
+            spread: py-1
+          rows.mod.skip: true
+        pinky:
+          key:
+            stagger: -12
+            splay: -4
+            spread: py-1
+          rows.mod.skip: true
+        pinky_reach:
+          key:
+            stagger: 0.5py
+          rows.mod.skip: true
+          rows.top.skip: true
+      rows:
+        mod:
+        bot:
+        middle:
+        top:
+    thumb:
+      anchor:
+        ref: matrix_index_reach_mod
+        shift: [-py-2, -14]
+      columns:
+        outer:
+          key:
+            splay: 18
+        middle:
+          key:
+            splay: -9
+            stagger: -1.5
+            spread: py+1
+        inner:
+          key:
+            splay: -9
+            stagger: -1.5
+            spread: py+1
+      rows:
+        cluster:
+          key:
+            rotate: 10
+
+  mirror: &mirror
+    ref: thumb_outer_cluster
+    distance: -2.5kx
+
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [px+10, py+10]
+  keys:
+    - what: rectangle
+      where: true
+      bound: false
+      size: [kx,ky]
+pcbs:
+  tutorial:
+    outlines:
+      main:
+        outline: raw
+    footprints:
+      # Hotswap Choc keys.
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          designator: SW
+          from: "{{column_net}}"
+          to: "{{colrow}}"
