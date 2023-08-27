@@ -3,14 +3,14 @@ units:
   kx: cx
   ky: cy
   #Padding variables
-  px: kx + 2
-  py: ky + 2
+  px: kx + 1
+  py: ky + 1
 points:
   zones:
     matrix:
       key:
-        padding: 1py
-        //spread: 1px
+        padding: ky
+        spread: kx
       columns:
         index_reach:
           rows.mod.skip: true
@@ -22,18 +22,19 @@ points:
           key:
             stagger: 4
             splay: -2
+            spread: py-0.3
           rows.mod.skip: true
         middle:
           key:
             stagger: -12
             splay: -4
-            spread: py-1
+            spread: py-1.4
           rows.mod.skip: true
         pinky:
           key:
             stagger: -12
             splay: -4
-            spread: py-1
+            spread: py-1.4
           rows.mod.skip: true
         pinky_reach:
           key:
@@ -48,25 +49,23 @@ points:
     thumb:
       anchor:
         ref: matrix_index_reach_mod
-        shift: [-py-2, -14]
+        shift: [-py-1, -10]
       columns:
         outer:
           key:
-            splay: 18
+            splay: 20
         middle:
           key:
-            splay: -9
+            splay: -10
             stagger: -1.5
-            spread: py+1
+            spread: py+1.75
         inner:
           key:
-            splay: -9
+            splay: -10
             stagger: -1.5
-            spread: py+1
+            spread: py+1.75
       rows:
         cluster:
-          key:
-            rotate: 10
 
   mirror: &mirror
     ref: thumb_outer_cluster
@@ -81,9 +80,9 @@ outlines:
     - what: rectangle
       where: true
       bound: false
-      size: [kx,ky]
+      size: [kx-0.2,ky-0.3]
 pcbs:
-  tutorial:
+  test:
     outlines:
       main:
         outline: raw
@@ -99,3 +98,6 @@ pcbs:
           designator: SW
           from: "{{column_net}}"
           to: "{{colrow}}"
+
+
+        
