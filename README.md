@@ -1,4 +1,4 @@
-# NAME_TBD
+# Kuniboard
 Wireless Split Keyboard with Trackpoint Support. WIP
 Features:
 * Column stagger and splay
