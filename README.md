@@ -6,6 +6,7 @@ Features:
 * Halfs can connect with magnets for transport
 * MIP display on one half, trackpoint on other
 * Halfes attach together with magnets for transportation. When attached, power is cut with a magnet switch.
+* Overcharge and Underdischarge protection
   
 
 ## First Case Prototype
@@ -15,3 +16,6 @@ Features:
 ## Fist PCB Prototype
 Ordered, waiting for PCBs to arrive
 ![image](https://github.com/tobiasarndt/Kuniboard/assets/54204861/63e520da-cb51-4c15-9bf2-f47dad7dfdec)
+
+## Keyboard mascot Kunibert
+![image](https://github.com/tobiasarndt/Kuniboard/assets/54204861/7ce5dbbf-680a-4d10-9cac-d1ab57af0d1d)
