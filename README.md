@@ -5,6 +5,7 @@ Features:
 * 40 keys, with option to snap off the outer pinky columns for a 36 key layout.
 * Halfs can connect with magnets for transport
 * MIP display on one half, trackpoint on other
+* Halfes attach together with magnets for transportation. When attached, power is cut with a magnet switch.
   
 
 ## First Case Prototype
