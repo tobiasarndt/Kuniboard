@@ -7,7 +7,9 @@ Features:
 * MIP display on one half, trackpoint on other
 * Halfes attach together with magnets for transportation. When attached, power is cut with a magnet switch.
 * Overcharge and Underdischarge protection
-  
+
+## Finished Keyboard
+![1000037680](https://github.com/tobiasarndt/Kuniboard/assets/54204861/1f4eefbe-7b41-41f5-8f8f-687df4bb2e2b)
 
 ## First Case Prototype
 ![image](https://github.com/tobiasarndt/NAME_TBD_Keyboard/assets/54204861/e0fc6622-9397-467f-a2e3-ba414f97932c)
