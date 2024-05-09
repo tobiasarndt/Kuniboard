@@ -2,12 +2,13 @@
 Wireless Split Keyboard with Trackpoint Support. WIP
 Features:
 * Column stagger and splay
-* 40 keys, with option to snap off the outer pinky columns for a 36 key layout.
+* 42 keys, with option to snap off the outer pinky columns for a 36 key layout.
 * Halfs can connect with magnets for transport
 * MIP display on one half, trackpoint on other
 * Halfes attach together with magnets for transportation. When attached, power is cut with a magnet switch.
 * Overcharge and Underdischarge protection
 
+[ZMK config](https://github.com/tobiasarndt/zmk-config)
 ## Finished Keyboard
 ![1000037680](https://github.com/tobiasarndt/Kuniboard/assets/54204861/1f4eefbe-7b41-41f5-8f8f-687df4bb2e2b)
 
